@@ -5,7 +5,8 @@ The project was started at the [American Planning Association Conference in 2015
 during the [hacking meetup](http://www.meetup.com/Code-for-Seattle/events/221372032/).
 
 ### Live Demo
-The live demo is at [http://www.acargocultcoder.com/APA15](http://www.acargocultcoder.com/APA15).
+The live demo is at:
+[http://www.acargocultcoder.com/apa15/](http://www.acargocultcoder.com/apa15/)
 
 ### Installation
 The project is small right now.  THere is just an index page, and some JavaScript and CSS 
