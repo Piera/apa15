@@ -1,0 +1,29 @@
+{
+  "name": "APA15",
+  "version": "1.0.0",
+  "description": "map display project",
+  "main": "server.js",
+  "dependencies": {
+    "connect": "^3.3.5",
+    "serve-static": "^1.9.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manuisfunny/APA15"
+  },
+  "keywords": [
+    "APA15",
+    "maps"
+  ],
+  "author": "manuisfunny",
+  "license": "GPLV3",
+  "bugs": {
+    "url": "https://github.com/manuisfunny/APA15/issues"
+  },
+  "homepage": "https://github.com/manuisfunny/APA15"
+}
