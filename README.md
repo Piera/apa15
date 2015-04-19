@@ -6,7 +6,7 @@ during the [hacking meetup](http://www.meetup.com/Code-for-Seattle/events/221372
 
 ### Live Demo
 The live demo is at:
-[http://www.acargocultcoder.com/apa15/](http://www.acargocultcoder.com/apa15/)
+[http://codeforseattle.org/apa15/](http://codeforseattle.org/apa15/)
 
 ### Installation
 The project is small right now.  THere is just an index page, and some JavaScript and CSS 
