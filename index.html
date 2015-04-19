@@ -13,29 +13,46 @@
         <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
+        <script src="http://fgnass.github.io/spin.js/spin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-spinner/0.6.1/angular-spinner.min.js"></script>
         <script src="./vendor/angular-leaflet-directive.min.js"></script>
         <script src="./app.js"></script>
+        <script src="./mockHttp.js"></script>
     </head>
     <body>
         <div ng-controller="MainCtrl" class="container">
+            <span spinner-key="spinner-1" us-spinner="{radius:30, width:8, length: 16}"></span>
             <div class="row">
                 <div class="col-xs-12">
                     <h1>APA15</h1>
+                    <button ng-click="startSpin()">Start spinner</button>
+                    <button ng-click="stopSpin()">Stop spinner</button>
+                    <button class="btn btn-primary"
+                            ng-click="requestOpenStreetMapData()"
+                            ng-disabled="!searchEnabled">
+                        Search
+                    </button>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-9 col-xs-12">
-                    Bounds:  {{bounds | boundBox}}
                     <leaflet bounds="bounds" center="center"
                              width="100%" height="75%"></leaflet>
                 </div>
-                <div class="col-sm-3 col-xs-12">
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
                     <h2>Nodes <small>({{nodes.length}})</small></h2>
-                    <ul>
-                        <li ng-repeat="node in nodes">
-                            {{node.id}}: {{node.lon}}, {{node.lat}}
-                        </li>
-                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <h2>Ways <small>({{ways.length}})</small></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <h2>Relations <small>({{relations.length}})</small></h2>
                 </div>
             </div>
         </div>
